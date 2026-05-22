@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecobazar </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="topbar">
+        <div class="container">
+          <span>Fresh harvest delivered daily across your city.</span>
+          <span>Support: +1 (800) 456 7890</span>
+        </div>
+      </div>
+      <header class="header-main">
+        
+        <div class="container">
+          <a class="logo" href="index.html">
+            <img src="./images/escobarlogo.svg" alt="" class="nav__logo">
+          </a>
+          <div class="mobile-only-menu">
+            <div class="menu-btn" onclick="toggleMenu()">
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+            <div class="nav-container" id="navContainer">
+              <ul class="nav-links">
+                <li style="--i: 0.1s"><a href="index.html">Home</a></li>
+                <li style="--i: 0.1s"><a href="about.html">About</a></li>
+                <li style="--i: 0.2s"><a href="shop.html">Shop</a></li>
+                <li style="--i: 0.3s"><a href="#footer-contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <nav class="nav" aria-label="Primary navigation">
+            <a class="is-active" href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="shop.html">Shop</a>
+            <a href="#footer-contact">Contact</a>
+          </nav>
+          <div class="header-actions">
+            <label class="search" aria-label="Search products">
+              <img src="./images/searchicon.svg" alt="" class="nav__search">
+              <input type="search" placeholder="Search organic products" />
+            </label>
+            <a class="icon-button" href="shop.html" aria-label="Cart"><img src="./images/shopbag.svg" alt="" class="nav__shop"></a>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="hero">
+          <div class="container">
+            <div class="hero-panel">
+              <div class="hero-copy">
+                <span class="eyebrow">Organic Grocery Marketplace</span>
+                <h1>Fresh &amp; Healthy Organic Food</h1>
+                <p>
+                  Discover clean ingredients, seasonal produce, and nutrient-rich essentials curated
+                  for modern families who want healthy shopping without compromise.
+                </p>
+                <div class="hero-actions">
+                  <a class="button" href="shop.html">Shop Now</a>
+                  <span class="hero-note">Trusted by 12k+ happy customers</span>
+                </div>
+              </div>
+              <div class="hero-media">
+                <img
+                  src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=900&q=80"
+                  alt="Organic fruit and vegetables"
+                />
+                <div class="floating-chip chip-top">
+                  <span class="stats-value">100% Natural</span>
+                  <span class="stats-label">Picked from trusted farms</span>
+                </div>
+                <div class="floating-chip chip-bottom">
+                  <span class="stats-value">Same-Day Delivery</span>
+                  <span class="stats-label">Fast, fresh, reliable</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="features-bar">
+          <div class="container">
+            <div class="features-grid">
+              <article class="feature-item">
+                <span class="feature-icon"><img src="./images/vivian.svg" alt=""></span>
+                <div>
+                  <h3>Free Shipping</h3>
+                  <p>Complimentary delivery for orders over $75.</p>
+                </div>
+              </article>
+              <article class="feature-item">
+                <span class="feature-icon"><img src="./images/naushnik.svg" alt=""></span>
+                <div>
+                  <h3>24/7 Support</h3>
+                  <p>Friendly help any time you need grocery guidance.</p>
+                </div>
+              </article>
+              <article class="feature-item">
+                <span class="feature-icon"><img src="./images/shjpingbag.svg" alt=""></span>
+                <div>
+                  <h3>Secure Payment</h3>
+                  <p>Protected checkout with trusted payment methods.</p>
+                </div>
+              </article>
+              <article class="feature-item">
+                <span class="feature-icon"></span>
+                <div>
+                  <h3>Money-back Guarantee</h3>
+                  <p>Freshness promise backed by hassle-free returns.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="container">
+            <div class="promo-grid">
+              <article
+                class="promo-card"
+                style="--promo-image:url('https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=900&q=80');"
+              >
+                <div class="promo-copy">
+                  <span class="promo-badge">Sale of the Month</span>
+                  <h3>Save up to 40% on farm-fresh favorites</h3>
+                  <p>Limited-time bundles from local seasonal growers.</p>
+                  <a class="button-outline" href="shop.html">Explore Deals</a>
+                </div>
+              </article>
+              <article
+                class="promo-card"
+                style="--promo-image:url('https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=900&q=80');"
+              >
+                <div class="promo-copy">
+                  <span class="promo-badge">Low-Fat Meat</span>
+                  <h3>Lean cuts packed with protein and flavor</h3>
+                  <p>Expertly selected for balanced everyday meals.</p>
+                  <a class="button-outline" href="shop.html">Shop Meat</a>
+                </div>
+              </article>
+              <article
+                class="promo-card"
+                style="--promo-image:url('https://images.unsplash.com/photo-1619566636858-adf3ef46400b?auto=format&fit=crop&w=900&q=80');"
+              >
+                <div class="promo-copy">
+                  <span class="promo-badge">Fresh Fruit</span>
+                  <h3>Colorful fruit boxes ready for the week</h3>
+                  <p>Sweet, ripe, and delivered at peak freshness.</p>
+                  <a class="button-outline" href="shop.html">Get Fruit</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="container">
+            <div class="section-heading">
+              <span class="eyebrow">Browse Essentials</span>
+              <h2>Shop by Top Categories</h2>
+              <p>
+                Build your basket from vibrant produce, pantry staples, nourishing proteins, and
+                better-for-you snacks.
+              </p>
+            </div>
+            <div class="categories-grid">
+              <article class="category-card">
+                <span class="category-icon">🍎</span>
+                <h3>Fruits</h3>
+                <span>24 items</span>
+              </article>
+              <article class="category-card">
+                <span class="category-icon">🥦</span>
+                <h3>Vegetables</h3>
+                <span>32 items</span>
+              </article>
+              <article class="category-card">
+                <span class="category-icon">🥩</span>
+                <h3>Meat</h3>
+                <span>16 items</span>
+              </article>
+              <article class="category-card">
+                <span class="category-icon">🥜</span>
+                <h3>Snacks</h3>
+                <span>18 items</span>
+              </article>
+              <article class="category-card">
+                <span class="category-icon">🥛</span>
+                <h3>Dairy</h3>
+                <span>14 items</span>
+              </article>
+              <article class="category-card">
+                <span class="category-icon">🌾</span>
+                <h3>Grains</h3>
+                <span>20 items</span>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="container">
+            <div class="utility-row">
+              <div>
+                <span class="eyebrow">Best Sellers</span>
+                <h2>Featured Products</h2>
+              </div>
+              <a class="button-outline" href="shop.html">View All Products</a>
+            </div>
+            <div class="products-grid">
+              <article class="product-card">
+                <div class="product-media">
+                  <img src="https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=800&q=80" alt="Fresh lettuce" />
+                  <span class="wishlist">♡</span>
+                </div>
+                <div class="product-meta">
+                  <div>
+                    <h3 class="product-name">Green Lettuce</h3>
+                    <p class="price">$3.99 <small>$5.50</small></p>
+                  </div>
+                  <a class="icon-button" href="shop.html" aria-label="Add Green Lettuce to cart">+</a>
+                </div>
+                <div class="rating">★★★★★ <span>(128)</span></div>
+              </article>
+              <article class="product-card">
+                <div class="product-media">
+                  <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?auto=format&fit=crop&w=800&q=80" alt="Red apples" />
+                  <span class="wishlist">♡</span>
+                </div>
+                <div class="product-meta">
+                  <div>
+                    <h3 class="product-name">Red Apple Pack</h3>
+                    <p class="price">$6.40</p>
+                  </div>
+                  <a class="icon-button" href="shop.html" aria-label="Add Red Apple Pack to cart">+</a>
+                </div>
+                <div class="rating">★★★★★ <span>(84)</span></div>
+              </article>
+              <article class="product-card">
+                <div class="product-media">
+                  <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80" alt="Avocados" />
+                  <span class="wishlist">♡</span>
+                </div>
+                <div class="product-meta">
+                  <div>
+                    <h3 class="product-name">Big Potatoes</h3>
+                    <p class="price">$4.80</p>
+                  </div>
+                  <a class="icon-button" href="shop.html" aria-label="Add Organic Avocado to cart">+</a>
+                </div>
+                <div class="rating">★★★★☆ <span>(61)</span></div>
+              </article>
+              <article class="product-card">
+                <div class="product-media">
+                  <img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=800&q=80" alt="Sweet corn" />
+                  <span class="wishlist">♡</span>
+                </div>
+                <div class="product-meta">
+                  <div>
+                    <h3 class="product-name">Red Tomato</h3>
+                    <p class="price">$2.90</p>
+                  </div>
+                  <a class="icon-button" href="shop.html" aria-label="Add Sweet Corn to cart">+</a>
+                </div>
+                <div class="rating">★★★★★ <span>(98)</span></div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="container">
+            <div class="banner-card">
+              <img
+                src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1400&q=80"
+                alt="Organic farm landscape"
+              />
+              <div class="banner-copy">
+                <span class="eyebrow">Sustainably Sourced</span>
+                <h2>We Grow Better Food with Better Farming</h2>
+                <p>
+                  Partnering with local growers means shorter routes, fresher produce, and a supply
+                  chain you can feel good about.
+                </p>
+                <a class="button" href="about.html">Discover Our Story</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="container">
+            <div class="section-heading">
+              <span class="eyebrow">People Behind Ecobazar</span>
+              <h2>Meet Our Awesome Team</h2>
+              <p>
+                A passionate crew of growers, nutrition lovers, and service experts building a better
+                grocery experience.
+              </p>
+            </div>
+            <div class="team-grid">
+              <article class="team-card">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=700&q=80" alt="Jeremy Wilson" />
+                <div class="team-copy">
+                  <h3>Jeremy Wilson</h3>
+                  <p>Founder &amp; Grower Relations</p>
+                </div>
+              </article>
+              <article class="team-card">
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=700&q=80" alt="Jane Cooper" />
+                <div class="team-copy">
+                  <h3>Jane Cooper</h3>
+                  <p>Creative Director</p>
+                </div>
+              </article>
+              <article class="team-card">
+                <img src="https://images.unsplash.com/photo-1507591064344-4c6ce005b128?auto=format&fit=crop&w=700&q=80" alt="Cody Fisher" />
+                <div class="team-copy">
+                  <h3>Cody Fisher</h3>
+                  <p>Operations Lead</p>
+                </div>
+              </article>
+              <article class="team-card">
+                <img src="./images/robert fox.jpg" alt="Robert Fox" />
+                <div class="team-copy">
+                  <h3>Robert Fox</h3>
+                  <p>Farm Partnerships Manager</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="container">
+            <div class="section-heading">
+              <span class="eyebrow">What Clients Say</span>
+              <h2>Testimonials from Happy Households</h2>
+              <p>
+                Real feedback from customers who trust Ecobazar for fresh weekly essentials.
+              </p>
+            </div>
+            <div class="testimonial-grid">
+              <article class="testimonial-card">
+                <p>
+                  The produce quality is consistently incredible. Everything arrives fresh, bright,
+                  and ready to use, which saves me time every week.
+                </p>
+                <div class="reviewer">
+                  <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80" alt="Maya Patel" />
+                  <div>
+                    <h3>Maya Patel</h3>
+                    <p class="reviewer-role">Weekly subscriber</p>
+                    <div class="rating">★★★★★</div>
+                  </div>
+                </div>
+              </article>
+              <article class="testimonial-card">
+                <p>
+                  I love the clean packaging and the ease of finding organic staples for my family.
+                  The delivery team is always friendly and on time.
+                </p>
+                <div class="reviewer">
+                  <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=200&q=80" alt="Emma Dawson" />
+                  <div>
+                    <h3>Emma Dawson</h3>
+                    <p class="reviewer-role">Healthy meal planner</p>
+                    <div class="rating">★★★★★</div>
+                  </div>
+                </div>
+              </article>
+              <article class="testimonial-card">
+                <p>
+                  Ecobazar feels like a premium grocery startup with the warmth of a local market.
+                  Their seasonal fruit boxes are always a hit at home.
+                </p>
+                <div class="reviewer">
+                  <img src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?auto=format&fit=crop&w=200&q=80" alt="Olivia Brown" />
+                  <div>
+                    <h3>Olivia Brown</h3>
+                    <p class="reviewer-role">Nutrition coach</p>
+                    <div class="rating">★★★★★</div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+      <section class="newsletter">
+        <div class="container">
+          <div class="newsletter-panel">
+            <div>
+              <h2>Subscribe to Our Newsletter</h2>
+              <p>Get seasonal drops, healthy recipes, and exclusive member-only offers.</p>
+            </div>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your email address" />
+              <button class="button" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer class="footer-main" id="footer-contact">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-column">
+              <a class="logo" href="index.html">
+                <img src="./images/escobarlogo.svg" alt="">
+              </a>
+              <p>
+                Premium organic grocery shopping with carefully sourced ingredients, fast delivery,
+                and a friendlier way to stock your kitchen.
+              </p>
+              <p>hello@ecobazar.com</p>
+              <p>+1 (800) 456 7890</p>
+            </div>
+            <div class="footer-column">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="#footer-contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3>My Account</h3>
+              <ul>
+                <li><a href="shop.html">Shopping Cart</a></li>
+                <li><a href="shop.html">Wishlist</a></li>
+                <li><a href="shop.html">Order History</a></li>
+                <li><a href="shop.html">Track Order</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3>Company</h3>
+              <ul>
+                <li><a href="about.html">Our Story</a></li>
+                <li><a href="about.html">Team Members</a></li>
+                <li><a href="about.html">Delivery</a></li>
+                <li><a href="shop.html">Careers</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3>Contact</h3>
+              <ul>
+                <li>88 Green Avenue, Portland</li>
+                <li>Daily: 8:00 AM - 9:00 PM</li>
+                <li>Fresh support available 24/7</li>
+              </ul>
+              <div class="socials">
+                <a href="#" aria-label="Instagram">◐</a>
+                <a href="#" aria-label="Facebook">f</a>
+                <a href="#" aria-label="Twitter">x</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="footer-bottom">
+        <div class="container">
+          <span>Copyright © 2026 Ecobazar. All rights reserved.</span>
+          <span>Organic living starts with better choices.</span>
+        </div>
+      </div>
+    </div>
+    <script>
+      function toggleMenu() {
+        document.getElementById("navContainer").classList.toggle("active");
+        document.querySelector(".menu-btn").classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>
