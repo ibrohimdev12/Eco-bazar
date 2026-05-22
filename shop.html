@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Ecobazar | Organic Grocery Collection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="topbar">
+        <div class="container">
+          <span>Shop clean ingredients, seasonal staples, and market favorites.</span>
+          <span>Fresh deals updated daily.</span>
+        </div>
+      </div>
+      <header class="header-main">
+        <div class="container">
+          <a class="logo" href="index.html">
+            <img src="./images/escobarlogo.svg" alt="" class="nav__logo">
+          </a>
+          <nav class="nav" aria-label="Primary navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a class="is-active" href="shop.html">Shop</a>
+            <a href="#footer-contact">Contact</a>
+          </nav>
+          <div class="mobile-only-menu">
+            <div class="menu-btn" onclick="toggleMenu()">
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+            <div class="nav-container" id="navContainer">
+              <ul class="nav-links">
+                <li style="--i: 0.1s"><a href="index.html">Home</a></li>
+                <li style="--i: 0.1s"><a href="about.html">About</a></li>
+                <li style="--i: 0.2s"><a href="shop.html">Shop</a></li>
+                <li style="--i: 0.3s"><a href="#footer-contact">Contact</a></li>
+              </ul>
+            </div>
+        </div>
+          <div class="header-actions">
+            <label class="search" aria-label="Search products">
+              <img src="./images/searchicon.svg" alt="" class="nav__search">
+              <input type="search" placeholder="Search organic products" />
+            </label>
+            <a class="icon-button" href="shop.html" aria-label="Cart"><img src="./images/shopbag.svg" alt="" class="nav__shop"></a>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="section">
+          <div class="container">
+            <div class="utility-row">
+              <div>
+                <span class="eyebrow">Organic Collection</span>
+                <h1 style="margin-top: 0.4rem">Fresh Picks for Your Pantry</h1>
+              </div>
+              <p class="muted">Showing 12 of 48 healthy essentials</p>
+            </div>
+
+            <div class="shop-layout">
+              <aside class="filters">
+                <section class="filter-card">
+                  <h3>All Categories</h3>
+                  <ul class="filter-list">
+                    <li><a href="#">Fresh Fruit</a> <span>(14)</span></li>
+                    <li><a href="#">Vegetables</a> <span>(18)</span></li>
+                    <li><a href="#">Meat &amp; Fish</a> <span>(9)</span></li>
+                    <li><a href="#">Snacks</a> <span>(11)</span></li>
+                    <li><a href="#">Dairy &amp; Eggs</a> <span>(7)</span></li>
+                    <li><a href="#">Healthy Drinks</a> <span>(6)</span></li>
+                  </ul>
+                </section>
+
+                <section class="filter-card">
+                  <h3>Price Range</h3>
+                  <div class="range-bar">
+                    <span class="range-dot left"></span>
+                    <span class="range-dot right"></span>
+                  </div>
+                  <p class="muted">Price: $12 - $48</p>
+                </section>
+
+                <section class="filter-card">
+                  <h3>Ratings</h3>
+                  <ul class="filter-list">
+                    <li><a href="#">★★★★★</a> <span>(32)</span></li>
+                    <li><a href="#">★★★★☆ &amp; up</a> <span>(21)</span></li>
+                    <li><a href="#">★★★☆☆ &amp; up</a> <span>(14)</span></li>
+                    <li><a href="#">★★☆☆☆ &amp; up</a> <span>(8)</span></li>
+                  </ul>
+                </section>
+
+                <section class="filter-card">
+                  <h3>Popular Tags</h3>
+                  <div class="tag-list">
+                    <a href="#">Organic</a>
+                    <a href="#">Seasonal</a>
+                    <a href="#">Local</a>
+                    <a href="#">Vegan</a>
+                    <a href="#">Snackable</a>
+                    <a href="#">Protein</a>
+                  </div>
+                </section>
+
+                <article class="mini-promo">
+                  <img
+                    src="https://images.unsplash.com/photo-1518843875459-f738682238a6?auto=format&fit=crop&w=900&q=80"
+                    alt="Discount produce"
+                  />
+                  <div class="card-copy">
+                    <span class="eyebrow">79% Discount</span>
+                    <h3>Save Big on Seasonal Picks</h3>
+                    <p>Daily deals on colorful produce and pantry staples.</p>
+                    <a class="button-outline" href="#">Shop Deals</a>
+                  </div>
+                </article>
+              </aside>
+
+              <section>
+                <div class="shop-toolbar">
+                  <div class="toolbar-pill">Popular products</div>
+                  <div class="toolbar-pill">Sort by: Latest</div>
+                </div>
+
+                <div class="shop-products">
+                  <article class="product-card">
+                    <div class="product-media">
+                      <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80" alt="Fresh potatoes" />
+                      <span class="wishlist">♡</span>
+                    </div>
+                    <div class="product-meta">
+                      <div>
+                        <h3 class="product-name">Golden Potatoes</h3>
+                        <p class="price">$4.25</p>
+                      </div>
+                      <a class="icon-button" href="#" aria-label="Add Golden Potatoes to cart">+</a>
+                    </div>
+                    <div class="rating">★★★★★ <span>(44)</span></div>
+                  </article>
+
+                  <article class="product-card">
+                    <div class="product-media">
+                      <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80" alt="Bok choy" />
+                      <span class="wishlist">♡</span>
+                    </div>
+                    <div class="product-meta">
+                      <div>
+                        <h3 class="product-name">Bok Choy</h3>
+                        <p class="price">$3.70</p>
+                      </div>
+                      <a class="icon-button" href="#" aria-label="Add Bok Choy to cart">+</a>
+                    </div>
+                    <div class="rating">★★★★★ <span>(37)</span></div>
+                  </article>
+
+                  <article class="product-card">
+                    <div class="product-media">
+                      <img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=800&q=80" alt="Sweet corn" />
+                      <span class="wishlist">♡</span>
+                    </div>
+                    <div class="product-meta">
+                      <div>
+                        <h3 class="product-name">Sweet Corn</h3>
+                        <p class="price">$2.90</p>
+                      </div>
+                      <a class="icon-button" href="#" aria-label="Add Sweet Corn to cart">+</a>
+                    </div>
+                    <div class="rating">★★★★☆ <span>(22)</span></div>
+                  </article>
+
+                  <article class="product-card">
+                    <div class="product-media">
+                      <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=800&q=80" alt="Eggplant" />
+                      <span class="wishlist">♡</span>
+                    </div>
+                    <div class="product-meta">
+                      <div>
+                        <h3 class="product-name">Eggplant</h3>
+                        <p class="price">$5.10</p>
+                      </div>
+                      <a class="icon-button" href="#" aria-label="Add Eggplant to cart">+</a>
+                    </div>
+                    <div class="rating">★★★★★ <span>(27)</span></div>
+                  </article>
+
+                  <article class="product-card">
+                    <div class="product-media">
+                      <img src="https://images.unsplash.com/photo-1447175008436-054170c2e979?auto=format&fit=crop&w=800&q=80" alt="Cauliflower" />
+                      <span class="wishlist">♡</span>
+                    </div>
+                    <div class="product-meta">
+                      <div>
+                        <h3 class="product-name">Cauliflower</h3>
+                        <p class="price">$4.60</p>
+                      </div>
+                      <a class="icon-button" href="#" aria-label="Add Cauliflower to cart">+</a>
+                    </div>
+                    <div class="rating">★★★★★ <span>(39)</span></div>
+                  </article>
+
+                  <article class="product-card">
+                    <div class="product-media">
+                      <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?auto=format&fit=crop&w=800&q=80" alt="Green apples" />
+                      <span class="wishlist">♡</span>
+                    </div>
+                    <div class="product-meta">
+                      <div>
+                        <h3 class="product-name">Green Apple Pack</h3>
+                        <p class="price">$6.20</p>
+                      </div>
+                      <a class="icon-button" href="#" aria-label="Add Green Apple Pack to cart">+</a>
+                    </div>
+                    <div class="rating">★★★★☆ <span>(18)</span></div>
+                  </article>
+
+                  <article class="product-card">
+                    <div class="product-media">
+                      <img src="https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=800&q=80" alt="Bell pepper" />
+                      <span class="wishlist">♡</span>
+                    </div>
+                    <div class="product-meta">
+                      <div>
+                        <h3 class="product-name">Green Pepper</h3>
+                        <p class="price">$3.20</p>
+                      </div>
+                      <a class="icon-button" href="#" aria-label="Add Green Pepper to cart">+</a>
+                    </div>
+                    <div class="rating">★★★★★ <span>(42)</span></div>
+                  </article>
+
+                  <article class="product-card">
+                    <div class="product-media">
+                      <img src="https://images.unsplash.com/photo-1522184216316-3c25379f9760?auto=format&fit=crop&w=800&q=80" alt="Okra" />
+                      <span class="wishlist">♡</span>
+                    </div>
+                    <div class="product-meta">
+                      <div>
+                        <h3 class="product-name">Tender Okra</h3>
+                        <p class="price">$4.10</p>
+                      </div>
+                      <a class="icon-button" href="#" aria-label="Add Tender Okra to cart">+</a>
+                    </div>
+                    <div class="rating">★★★★☆ <span>(16)</span></div>
+                  </article>
+
+                  <article class="product-card">
+                    <div class="product-media">
+                      <img src="https://images.unsplash.com/photo-1622205313162-be1d5712a43f?auto=format&fit=crop&w=800&q=80" alt="Lettuce" />
+                      <span class="wishlist">♡</span>
+                    </div>
+                    <div class="product-meta">
+                      <div>
+                        <h3 class="product-name">Butter Lettuce</h3>
+                        <p class="price">$3.90</p>
+                      </div>
+                      <a class="icon-button" href="#" aria-label="Add Butter Lettuce to cart">+</a>
+                    </div>
+                    <div class="rating">★★★★★ <span>(29)</span></div>
+                  </article>
+
+                  <article class="product-card">
+                    <div class="product-media">
+                      <img src="https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?auto=format&fit=crop&w=800&q=80" alt="Spring onions" />
+                      <span class="wishlist">♡</span>
+                    </div>
+                    <div class="product-meta">
+                      <div>
+                        <h3 class="product-name">Spring Onions</h3>
+                        <p class="price">$2.40</p>
+                      </div>
+                      <a class="icon-button" href="#" aria-label="Add Spring Onions to cart">+</a>
+                    </div>
+                    <div class="rating">★★★★☆ <span>(20)</span></div>
+                  </article>
+
+                  <article class="product-card">
+                    <div class="product-media">
+                      <img src="https://images.unsplash.com/photo-1561136594-7f68413baa99?auto=format&fit=crop&w=800&q=80" alt="Red bell pepper" />
+                      <span class="wishlist">♡</span>
+                    </div>
+                    <div class="product-meta">
+                      <div>
+                        <h3 class="product-name">Red Bell Pepper</h3>
+                        <p class="price">$4.75</p>
+                      </div>
+                      <a class="icon-button" href="#" aria-label="Add Red Bell Pepper to cart">+</a>
+                    </div>
+                    <div class="rating">★★★★★ <span>(45)</span></div>
+                  </article>
+
+                  <article class="product-card">
+                    <div class="product-media">
+                      <img src="https://images.unsplash.com/photo-1550258987-190a2d41a8ba?auto=format&fit=crop&w=800&q=80" alt="Fresh mango" />
+                      <span class="wishlist">♡</span>
+                    </div>
+                    <div class="product-meta">
+                      <div>
+                        <h3 class="product-name">Fresh Mango</h3>
+                        <p class="price">$7.90</p>
+                      </div>
+                      <a class="icon-button" href="#" aria-label="Add Fresh Mango to cart">+</a>
+                    </div>
+                    <div class="rating">★★★★★ <span>(31)</span></div>
+                  </article>
+                </div>
+
+                <nav class="pagination" aria-label="Pagination">
+                  <a class="is-current" href="#">1</a>
+                  <a href="#">2</a>
+                  <a href="#">3</a>
+                  <a href="#">Next</a>
+                </nav>
+              </section>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <section class="newsletter">
+        <div class="container">
+          <div class="newsletter-panel">
+            <div>
+              <h2>Subscribe for New Seasonal Drops</h2>
+              <p>Fresh arrivals, limited bundles, and smart pantry offers sent to your inbox.</p>
+            </div>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your email address" />
+              <button class="button" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer-main" id="footer-contact">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-column">
+              <a class="logo" href="index.html">
+                <span class="logo-mark">🍃</span>
+                <span>Ecobazar</span>
+              </a>
+              <p>
+                Premium organic grocery shopping with carefully sourced ingredients, fast delivery,
+                and a friendlier way to stock your kitchen.
+              </p>
+              <p>hello@ecobazar.com</p>
+              <p>+1 (800) 456 7890</p>
+            </div>
+            <div class="footer-column">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="#footer-contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3>My Account</h3>
+              <ul>
+                <li><a href="shop.html">Shopping Cart</a></li>
+                <li><a href="shop.html">Wishlist</a></li>
+                <li><a href="shop.html">Order History</a></li>
+                <li><a href="shop.html">Track Order</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3>Company</h3>
+              <ul>
+                <li><a href="about.html">Our Story</a></li>
+                <li><a href="about.html">Team Members</a></li>
+                <li><a href="about.html">Delivery</a></li>
+                <li><a href="shop.html">Careers</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3>Contact</h3>
+              <ul>
+                <li>88 Green Avenue, Portland</li>
+                <li>Daily: 8:00 AM - 9:00 PM</li>
+                <li>Fresh support available 24/7</li>
+              </ul>
+              <div class="socials">
+                <a href="#" aria-label="Instagram">◐</a>
+                <a href="#" aria-label="Facebook">f</a>
+                <a href="#" aria-label="Twitter">x</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <span>Copyright © 2026 Ecobazar. All rights reserved.</span>
+          <span>Organic living starts with better choices.</span>
+        </div>
+      </div>
+    </div>
+    <script>
+      function toggleMenu() {
+        document.getElementById("navContainer").classList.toggle("active");
+        document.querySelector(".menu-btn").classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>
