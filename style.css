@@ -146,6 +146,10 @@ body {
    color: white; font-weight: 800; font-size: 1.3rem; }
 .logo span { color: var(--accent); }
 
+.feature__services {
+  width: 25px;
+}
+
 
 .mobile-only-menu {
   display: none;
